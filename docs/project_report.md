@@ -8,7 +8,7 @@ Date:  10/09/2024
 
 ## Introducción
 
-<!-- [Describir los antecedentes que ayuden a comprender el proyecto a desarrollar, o bien el análisis que se requiere llevar a cabo, incluyendo términos o definiciones, e imágenes relacionados a este. Esta sección, permite el usuario tener la noción del tema que se va a bordar en el resto del documento. -->
+_Echinodermata_ is a _phylum_ that is conformed by about 7 000 species. 
 
 
 
