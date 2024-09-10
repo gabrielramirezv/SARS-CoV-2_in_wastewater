@@ -1,9 +1,9 @@
 # Echinoderms in Mexico
 
 Nombre: <!-- Nombre X (<email>)  -->  
-Nombre: <!-- Nombre X (<email>)  -->
+Name:  Santiago Orozco Barrera (<santiago@lcg.unam.mx>)
 
-Fecha:  dd/mm/aaaa
+Date:  10/09/2024
 
 
 ## Introducción
@@ -27,7 +27,7 @@ Fecha:  dd/mm/aaaa
 
 
 
-## Planteamiento del problema
+## Problem Planting
 
 <!-- Describir la problemática que se presenta, la situación que motiva la realización del proyecto/análisis y que está causando posibles inconvenientes. -->
 
