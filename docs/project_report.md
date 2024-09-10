@@ -1,4 +1,4 @@
-# [Nombre del proyecto]
+# Echinoderms in Mexico
 
 Nombre: <!-- Nombre X (<email>)  -->  
 Nombre: <!-- Nombre X (<email>)  -->
@@ -11,9 +11,42 @@ Fecha:  dd/mm/aaaa
 <!-- [Describir los antecedentes que ayuden a comprender el proyecto a desarrollar, o bien el análisis que se requiere llevar a cabo, incluyendo términos o definiciones, e imágenes relacionados a este. Esta sección, permite el usuario tener la noción del tema que se va a bordar en el resto del documento. -->
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Planteamiento del problema
 
 <!-- Describir la problemática que se presenta, la situación que motiva la realización del proyecto/análisis y que está causando posibles inconvenientes. -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## Metodología
