@@ -3,7 +3,7 @@
 Name:  Gabriel Ramirez Vilchis (<gramirez@lcg.unam.mx>)
 Name:  Santiago Orozco Barrera (<santiago@lcg.unam.mx>)
 
-Date:  10/09/2024
+Date:  17/09/2024
 
 
 ## Introduction
