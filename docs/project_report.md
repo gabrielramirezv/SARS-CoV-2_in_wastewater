@@ -1,12 +1,12 @@
 # Echinoderms in Mexico
 
-Nombre: <!-- Nombre X (<email>)  -->  
+Name:  Gabriel Ramirez Vilchis (<gramirez@lcg.unam.mx>)
 Name:  Santiago Orozco Barrera (<santiago@lcg.unam.mx>)
 
 Date:  10/09/2024
 
 
-## Introducción
+## Introduction
 
 _Echinodermata_ is a _phylum_ that is conformed by about 7 000 species. 
 
