@@ -8,11 +8,11 @@ Date:  17/09/2024
   
 ## Introduction  
   
+<img src="https://cdn.britannica.com/43/202643-050-DCB4B405/sea-stars-starfish-Caribbean-sea.jpg" width="160" height="120" align="left" /> 
+
 Mexico is a country with a lot of species and environments, what is also true for aquatic organisms. Among  these species are the echinoderms, who live in the oceans around the mexican territory.  
 _Echinodermata_ is a _phylum_ conformed by about 7 000 species, being all of them different and adapted to its own environment. Some of their most important characteristics are pentaradial symmetry, structure of exoskeleton and ambulacral system that enables them to move.  
 All of echinoderms live in the ocean, since they are not capable to survive in fresh water nor out of the water. Even though, they are distributed in many different places. That is why we propose to find out what sets of echinoderms are located in specific environments.   
-
-<img src="https://cdn.britannica.com/43/202643-050-DCB4B405/sea-stars-starfish-Caribbean-sea.jpg" width="160" height="120" align="right" /> 
 
 
 
