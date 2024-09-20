@@ -1,14 +1,18 @@
-# Echinoderms in Mexico
+# Echinoderms in Mexico  
+  
+Name:  Gabriel Ramirez Vilchis (<gramirez@lcg.unam.mx>)  
+Name:  Santiago Orozco Barrera (<santiago@lcg.unam.mx>)  
+  
+Date:  17/09/2024  
+  
+  
+## Introduction  
+  
+Mexico is a country with a lot of species and environments, what is also true for aquatic organisms. Among  these species are the echinoderms, who live in the oceans around the mexican territory.  
+_Echinodermata_ is a _phylum_ conformed by about 7 000 species, being all of them different and adapted to its own environment. Some of their most important characteristics are pentaradial symmetry, structure of exoskeleton and ambulacral system that enables them to move.  
+All of echinoderms live in the ocean, since they are not capable to survive in fresh water nor out of the water. Even though, they are distributed in many different places. That is why we propose to find out what sets of echinoderms are located in specific environments.   
 
-Name:  Gabriel Ramirez Vilchis (<gramirez@lcg.unam.mx>)
-Name:  Santiago Orozco Barrera (<santiago@lcg.unam.mx>)
-
-Date:  17/09/2024
-
-
-## Introduction
-
-_Echinodermata_ is a _phylum_ that is conformed by about 7 000 species. 
+<img src="https://cdn.britannica.com/43/202643-050-DCB4B405/sea-stars-starfish-Caribbean-sea.jpg" width="160" height="120" align="right" /> 
 
 
 
@@ -197,8 +201,4 @@ Solución: Describir paso a paso la solución, incluyendo los comandos correspon
 
 
 ## Referencias
-<!-- Registrar todas las referencias consultadas. Se sugiere formato APA. Ejemplo:
- 
- [1] Frederick R. Blattner et al., The Complete Genome Sequence of <i>Escherichia coli</i> K-12.Science277,1453-1462(1997).DOI:10.1126/science.277.5331.1453
- 
- -->
+https://parquesnaturales.gva.es/es/web/acuarium-virtual-ifac/phylum-echinodermata
