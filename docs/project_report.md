@@ -33,25 +33,9 @@ All of echinoderms live in the ocean, since they are not capable to survive in f
 
 ## Problem Planting
 
-<!-- Describir la problemática que se presenta, la situación que motiva la realización del proyecto/análisis y que está causando posibles inconvenientes. -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+We hypothesized that determined species have determined living conditions. 
+So by grouping the samples related to the environmental conditions and location, we expect that the individuals of each species are contained in a single group.
+We intend to do the fase of grouping, by an k means algorithm. Once we have this classification, we will identify the samples contained in those groups 
 
 ## Metodología
 
