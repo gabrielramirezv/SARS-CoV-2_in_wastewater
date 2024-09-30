@@ -3,7 +3,7 @@
 Name:  Gabriel Ramirez Vilchis (<gramirez@lcg.unam.mx>)  
 Name:  Santiago Orozco Barrera (<santiago@lcg.unam.mx>)  
   
-Date:  17/09/2024  
+Date:  30/09/2024  
   
   
 ## Introduction  
@@ -31,30 +31,48 @@ All of echinoderms live in the ocean, since they are not capable to survive in f
 
 
 
-## Problem Planting
+## Problem Statement  
+
 
 We hypothesized that determined species have determined living conditions. 
-So by grouping the samples related to the environmental conditions and location, we expect that the individuals of each species are contained in a single group.
-We intend to do the fase of grouping, by an k means algorithm. Once we have this classification, we will identify the samples contained in those groups 
+By grouping the samples according to the environmental conditions and location, we expect that the individuals of each species are contained in a single group.
+We intend to do the phase of grouping, by a k means algorithm. Once we have this classification, we will identify the samples contained in those groups.  
 
-## Metodología
+## Methods
 
-<!-- [Identificar y describir los diferentes datos de entrada con los que se cuenta, así como de dónde fueron descargados, el formato de los mismos, y las columnas con las que cuenta. Especificar si se utilizará un servidor en particular para trabajar, o herramientas para el desarrollo de la solución del análsis. Formular las preguntas biológicas que se busca resolver con el análisis de los datos para determinar las tareas a realizar por cada una de ellas.]
+[Identificar y describir los diferentes datos de entrada con los que se cuenta, así como de dónde fueron descargados, el formato de los mismos, y las columnas con las que cuenta. Especificar si se utilizará un servidor en particular para trabajar, o herramientas para el desarrollo de la solución del análsis. Formular las preguntas biológicas que se busca resolver con el análisis de los datos para determinar las tareas a realizar por cada una de ellas.]
+The data that we used for this project is a national collection of echinoderms around Mexico, and it is available in [https://data.amerigeoss.org/dataset/coleccion-nacional-de-equinodermos]. The main information that it contains is the taxonomy of each echinoderm and its location.  
+This data is written in a CSV file, and it is composed by the following columns:  
+- decimal_latitud
+- decimal_longitud
+- kingdom
+- phylum
+- class
+- order
+- family
+- genus
+- subgenus
+- specie
+- taxon_scientific_name
+- individual_count
+- country_full
+- state_province
+- water_doby
+- depth  
 
+### A. Server and Software
 
-### A. Servidor y software
+> Server: chaac.lcg.unam.mx  
 
-> Servidor: 
+> User: --
 
-> Usuario: 
+> Software: --
 
-> Software: 
+### B. Input data 
 
-### B. Datos de Entrada 
+We filtered the original data file, and only conserved the useful columns for the purpose of this project.     
 
-Entendiendo los archivos de datos 
-
-Los datos de entrada fueron descargados desde NCBI y se encuentran en RUTA DE LA CARPETA.
+The filtered data file was processed using Bash and it is available in `data/filtered_echinoderms.tsv`, in this repository.
 
 ```
 |-- data
@@ -64,7 +82,7 @@ Los datos de entrada fueron descargados desde NCBI y se encuentran en RUTA DE LA
 |   |-- directorio.txt
 |   `-- flagella_genes.txt
 ```
--->
+
 
 #### Metadatos de la carpeta de datos
 
@@ -157,7 +175,7 @@ Respuesta: Describir el trabajo que implica o pasos a seguir para resolver esta 
 -->
 
 
-## Resultados
+## Results
  
 
 <!-- ### X. Pregunta 
@@ -179,10 +197,10 @@ Solución: Describir paso a paso la solución, incluyendo los comandos correspon
 
 
 
-## Análisis y Conclusiones
+## Discussion and Conclusion
 
  <!-- Describir todo lo que descubriste en este análisis -->
 
 
-## Referencias
+## References
 https://parquesnaturales.gva.es/es/web/acuarium-virtual-ifac/phylum-echinodermata
