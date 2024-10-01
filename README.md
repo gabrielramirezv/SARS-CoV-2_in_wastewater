@@ -39,6 +39,7 @@ Colección Nacional de Equinodermos (ICML-UNAM). En Portal de Datos Abiertos UNA
 ## Metadata and documentation
 
 This README provides basic usage information. For more detailed information on the scripts design and implementation, see the project_report.md file in the docs directory.
+The directory structure of the project is as follows: src (contains the source code), lib (contains the libraries to use), docs (documentation), tests (for testing), data (contains the datasets we use)
 
 ## Source Code
 
