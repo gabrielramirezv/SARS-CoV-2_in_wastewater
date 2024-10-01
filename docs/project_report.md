@@ -3,7 +3,7 @@
 Name:  Gabriel Ramirez Vilchis (<gramirez@lcg.unam.mx>)  
 Name:  Santiago Orozco Barrera (<santiago@lcg.unam.mx>)  
   
-Date:  30/09/2024  
+Date:  09/30/2024  
   
   
 ## Introduction  
@@ -13,21 +13,6 @@ Date:  30/09/2024
 Mexico is a country with a lot of species and environments, what is also true for aquatic organisms. Among  these species are the echinoderms, who live in the oceans around the mexican territory.  
 _Echinodermata_ is a _phylum_ conformed by about 7 000 species, being all of them different and adapted to its own environment. Some of their most important characteristics are pentaradial symmetry, structure of exoskeleton and ambulacral system that enables them to move.  
 All of echinoderms live in the ocean, since they are not capable to survive in fresh water nor out of the water. Even though, they are distributed in many different places. That is why we propose to find out what sets of echinoderms are located in specific environments.   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -43,8 +28,8 @@ We intend to do the phase of grouping, by a k means algorithm. Once we have this
 [Identificar y describir los diferentes datos de entrada con los que se cuenta, así como de dónde fueron descargados, el formato de los mismos, y las columnas con las que cuenta. Especificar si se utilizará un servidor en particular para trabajar, o herramientas para el desarrollo de la solución del análsis. Formular las preguntas biológicas que se busca resolver con el análisis de los datos para determinar las tareas a realizar por cada una de ellas.]
 The data that we used for this project is a national collection of echinoderms around Mexico, and it is available in [https://data.amerigeoss.org/dataset/coleccion-nacional-de-equinodermos]. The main information that it contains is the taxonomy of each echinoderm and its location.  
 This data is written in a CSV file, and it is composed by the following columns:  
-- decimal_latitud
-- decimal_longitud
+- decimal_latitude
+- decimal_longitude
 - kingdom
 - phylum
 - class
@@ -76,123 +61,90 @@ The filtered data file was processed using Bash and it is available in `data/fil
 
 ```
 |-- data
-|   |-- coli_genomic.fna
-|   |-- coli.gff
-|   |-- coli_protein.fna
-|   |-- directorio.txt
-|   `-- flagella_genes.txt
+|   `-- filtered_echinoderms.tsv
 ```
 
 
-#### Metadatos de la carpeta de datos
+#### Metadata
 
-<!-- 
-> Versión/Identificador del genoma:  NC_000913.3
 
-> Fecha de descarga: dd/mm/aaaa
+Original database ID:  NC_000913.3
 
->| Archivo | Descripción  | Tipo |
+Fecha de descarga: 09/30/2024
+
+| Archivo | Descripción  | Tipo |
 |:--      |:--           |:--  |
-| coli_genomic.fna  | Secuencia de nucleotidos de E. coli  | Formato FastA |
-| coli.gff.   | Anotación del genoma de E. coli  | Formato gff |
-| coli_protein.faa | Secuencia de aminoacidos de las proteinas de E. coli | formato FastA|
-| flagella_genes.txt | Genes con función relacionada al flagello en E. coli | lista |
-| directorio.txt. | Archivo con nombres de personas | lista |
+| filtered_echinoderms.tsv  | Filtered database of echinoderms with its taxonomy and distribution | Tab-separated values file |
+| water_distribution.tsv   | Environmental characteristics related to location | Tab-separated values file |
 
--->
 
-#### Formato de los archivos
 
-<!-- 
+#### Files format
 
-- `coli_genomic.fna` : formato FastA
+ 
+
+- `filtered_echinoderms.tsv` : Filtered database of echinoderms with its taxonomy and distribution
 
 
 ```
->NC_000913.3 Escherichia coli str. K-12 substr. MG1655, complete genome
-AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGCTTCTGAACTG
-GTTACCTGCCGTGAGTAAATTAAAATTTTATTGACTTAGGTCACTAAATACTTTAACCAATATAGGCATAGCGCACAGAC
-AGATAAAAATTACAGAGTACACAACATCCATGAAACGCATTAGCACCACCATTACCACCACCATCACCATTACCACAGGT
+"id","decimal_latitude","decimal_longitude","kingdom","phylum","class","order","family","genus","subgenus","specie","taxon_scientific_name","individual_count","country_full","state_province","water_body","depth"
+"1","20.8911111","-86.8505556","Animalia","Echinodermata","Crinoidea","Comatulida","Comasteridae","Nemaster","","Nemaster rubiginosa","Nemaster rubiginosa","2","Mexico (MX)","Quintana Roo","Atlantico",""
 ```
 
-Formato: 
+Format:  
 
-> a. La primera línea es información de la secuencia. Primero viene el identificador del genoma.
+ a. First line contains the columns names.
 
-> b. Después vienen varias líneas con la secuencia de nuclótidos del genoma completo.
+ b. In the next lines are the values for each variable in the database.
 
-
-
-- `coli.gff`: anotación de features en el genoma
-
-
-El contenido del archivo es:
+ c. These are the values in each column:
 
 ```
-##gff-version 3
-#!gff-spec-version 1.21
-#!processor NCBI annotwriter
-#!genome-build ASM584v2
-#!genome-build-accession NCBI_Assembly:GCF_000005845.2
-##sequence-region NC_000913.3 1 4641652
-##species https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=511145
-
-NC_000913.3     RefSeq  region  1       4641652 .       +       .       ID=NC_000913.3:1.>
-NC_000913.3     RefSeq  gene    190     255     .       +       .       ID=gene-b0001;Dbx>
-NC_000913.3     RefSeq  CDS     190     255     .       +       0       ID=cds-NP_414542.>
-NC_000913.3     RefSeq  gene    337     2799    .       +       .       ID=gene-b0002;Dbx>
-NC_000913.3     RefSeq  CDS     337     2799    .       +       0       ID=cds-NP_414543.>
-
-```
-
-Formato: 
-
-> a. Es un formato gff tabular, es decir, cada dato es separado por tabulador.
-> 
-> b. Cada renglón en el formato gff es una elemento genético anotado en el genoma, que se le denomina `feature`, éstos features pueden ser genes, secuencias de inserción, promotores, sitios de regulación, todo aquello que este codificado en el DNA y ocupe una región en el genoma de  E. coli.
-
-> c. Los atributos de cada columna par cada elemento genético son
-
->```
-1. seqname. Nombre del cromosoma
-2. source. Nombre del programa que generó ese elemento
-3. feature. Tipo de elemento
-4. start. Posición de inicio
-5. end. Posición de final
-6. score. Un valor de punto flotante
-7. strand. La cadena (+ , - )
-8. frame. Marco de lectura
-9.  attribute. Pares tag-value, separados por coma, que proveen información adicional
+1. id
+2. decimal_latitude
+3. decimal_longitud
+4. kingdom
+5. phylum
+6. class
+7. order
+8. family
+9. genus
+10. subgenus
+11. specie
+12. taxon_scientific_name
+13. individual_count
+14. country_full
+15. state_province
+16. water_doby
+17. depth 
 ```
 
 
-#### Preguntas de investigación
-> ¿Pregunta X?
-Respuesta: Describir el trabajo que implica o pasos a seguir para resolver esta pregunta.
+#### Research questions
+##### A. Is there a correlation between the taxonomy of echinoderms and their distribution?  
+1. Data filtering: using Shell, we filter the columns that interest us (taxonomy and sample location) and are located in Mexican territory. See [filtred_echinoderms.tsv]
+2. Clustering using sample location and water conditions. We divide Mexican oceans according to their latitude and longitude, and create clusters of different water conditions.  
+3. See if there is a relationship between the generated group and the species. We assign every echinoderm to a cluster according to its location, and then evaluate if there is a significant correlation.
+
+##### B. What are the locations with the largest ammount of echinoderms?  
+1. Statistic test: We order the clusters according to the amount of echinoderms related to them, and then characterize those that have significantly more echinoderms in them.
+
+##### C. How has the distribution of echinoderms changed througout time?  
+1. Classification: We classify the samples according to the century they come from.
+2. Relation. Using the same clusters from the previous questions, we repeat the procedure of assigning echinoderms to each cluster, but this time also considering the century of origin.  
+3. Comparison: We compare the clusters with the most of the samples for each century.  
 
 
 
--->
 
 
 ## Results
  
+##### A. Is there a correlation between the taxonomy of echinoderms and their distribution?  
 
-<!-- ### X. Pregunta 
+##### B. What are the locations with the largest ammount of echinoderms?  
 
-Archivo(s):     
-
-Algoritmo: 
-
-1. 
-
-Solución: Describir paso a paso la solución, incluyendo los comandos correspondientes
-
-```bash
-
-```
-
--->
+##### C. How has the distribution of echinoderms changed througout time?  
 
 
 
@@ -203,4 +155,4 @@ Solución: Describir paso a paso la solución, incluyendo los comandos correspon
 
 
 ## References
-https://parquesnaturales.gva.es/es/web/acuarium-virtual-ifac/phylum-echinodermata
+1. _PHYLUM ECHINODERMATA - Acuarium Virtual IFAC - Generalitat Valenciana_. (s. f.). Acuarium Virtual Ifac. [https://parquesnaturales.gva.es/es/web/acuarium-virtual-ifac/phylum-echinodermata]
