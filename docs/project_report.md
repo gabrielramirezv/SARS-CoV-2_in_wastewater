@@ -25,8 +25,7 @@ We intend to do the phase of grouping, by a k means algorithm. Once we have this
 
 ## Methods
 
-[Identificar y describir los diferentes datos de entrada con los que se cuenta, así como de dónde fueron descargados, el formato de los mismos, y las columnas con las que cuenta. Especificar si se utilizará un servidor en particular para trabajar, o herramientas para el desarrollo de la solución del análsis. Formular las preguntas biológicas que se busca resolver con el análisis de los datos para determinar las tareas a realizar por cada una de ellas.]
-The data that we used for this project is a national collection of echinoderms around Mexico, and it is available in [https://data.amerigeoss.org/dataset/coleccion-nacional-de-equinodermos]. The main information that it contains is the taxonomy of each echinoderm and its location.  
+The data that we used for this project is a national collection of echinoderms around Mexico, and it is available in https://data.amerigeoss.org/dataset/coleccion-nacional-de-equinodermos. The main information that it contains is the taxonomy of each echinoderm and its location.  
 This data is written in a CSV file, and it is composed by the following columns:  
 - decimal_latitude
 - decimal_longitude
@@ -155,4 +154,6 @@ Format:
 
 
 ## References
-1. _PHYLUM ECHINODERMATA - Acuarium Virtual IFAC - Generalitat Valenciana_. (s. f.). Acuarium Virtual Ifac. [https://parquesnaturales.gva.es/es/web/acuarium-virtual-ifac/phylum-echinodermata]
+1. _PHYLUM ECHINODERMATA - Acuarium Virtual IFAC - Generalitat Valenciana_. (s. f.). Acuarium Virtual Ifac. https://parquesnaturales.gva.es/es/web/acuarium-virtual-ifac/phylum-echinodermata
+
+2. _Colección Nacional de Equinodermos - AmeriGEOSS Community Platform DataHub. (BETA)_. (s. f.). https://data.amerigeoss.org/dataset/coleccion-nacional-de-equinodermos
