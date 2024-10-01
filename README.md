@@ -1,11 +1,14 @@
 # Echinoderms in Mexico
 
-This is a project which expect to analyze data from Echinoderms found in Mexico. We want to find a relation between the species and the environmental condition where they were found. Also, we want to know if there was a 
-common ancestor along the organisms found in the Mexican water bodies. If there was one, who was this common ancestror? 
+This is the repository for the Echinoderms in Mexico project. We hypothesize that habitat conditions (focusing on temperature, pH, and salinity) should be related to the diversity of echinoderm species that inhabit them. We expect to find that a species will be present in habitats with similar conditions even if they are not geographically close. Therefore, the distribution of Echinoderm species in Mexico should be governed by the temperature, pH, and salinity of the water.
+
+We propose to associate the samples with the water conditions in which they were found, hoping that there will be a correlation with the species of the organism.
 
 ## Authors:
 
-This project was made by Gabriel Ramirez Vilchis and Santiago Orozco Barrera
+This project was made by:
+- Gabriel Ramirez Vilchis [gramirez@lcg.unam.mx]
+- Santiago Orozco Barrera [santiago@lcg.unam.mx]
 
 ## Usage:
 
@@ -17,16 +20,14 @@ This project was made by Gabriel Ramirez Vilchis and Santiago Orozco Barrera
 
 ## Exceptions handling:
 
-Si el archivo proporcionado no existe, el script generará un mensaje de error. Del mismo modo, si el archivo contiene entradas que no son correspondientes, el script generará un error.
+[Si el archivo proporcionado no existe, el script generará un mensaje de error. Del mismo modo, si el archivo contiene entradas que no son correspondientes, el script generará un error.]
 
 ## Tests:
 
-El script incluye un conjunto de pruebas unitarias. Puede ejecutar estas pruebas con:
+[El script incluye un conjunto de pruebas unitarias. Puede ejecutar estas pruebas con:]
 
 ```
 python -m unittest [Nombre del script].py
-
-
 ```
 
 ## Data:
@@ -37,11 +38,12 @@ Colección Nacional de Equinodermos (ICML-UNAM). En Portal de Datos Abiertos UNA
 
 ## Metadata and documentation
 
-Este README ofrece información de uso básico. Para obtener información más detallada sobre el diseño y la implementación del script, consulte [Enlace a la documentación].
+This README provides basic usage information. For more detailed information on the scripts design and implementation, see the project_report.md file in the docs directory.
+The directory structure of the project is as follows: src (contains the source code), lib (contains the libraries to use), docs (documentation), tests (for testing), data (contains the datasets we use)
 
 ## Source Code
 
-El código fuente está disponible en este repositorio. Se acoge con satisfacción cualquier contribución o sugerencia a través de solicitudes pull request.
+The source code is available in this repository. Any contributions or suggestions via pull requests are welcomed.
 
 ## Terms of use
 
@@ -49,8 +51,9 @@ This script is available under the MIT license. See the LICENSE file for more de
 
 ## Citation
 
-Si utiliza este script en su trabajo, por favor cite: [información de citación].
+If you use this script in your work, please cite it as:
+Ramirez, G. and Orozco, S. (2024). Echinoderms in Mexico (v1.0.0) [GitHub Repository]. GitHub. https://github.com/gabrielramirezv/echinoderms_in_Mexico/ 
 
 ## Contact us
 
-Si tiene problemas o preguntas, por favor abra un problema en este repositorio o póngase en contacto con nosotros en: [información de contacto].
+If you have problems or questions, please open an issue in this repository or contact us at: [gramirez@lcg.unam.mx] or [santiago@lcg.unam.mx].
