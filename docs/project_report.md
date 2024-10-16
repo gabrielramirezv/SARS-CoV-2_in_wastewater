@@ -1,48 +1,43 @@
-# Echinoderms in Mexico  
+# SARS-CoV-2 in wastewater 
   
 Name:  Gabriel Ramirez Vilchis (<gramirez@lcg.unam.mx>)  
 Name:  Santiago Orozco Barrera (<santiago@lcg.unam.mx>)  
   
-Date:  09/30/2024  
+
+Date:  Oct/15/2024  
+
   
   
 ## Introduction  
   
-<img src="https://cdn.britannica.com/43/202643-050-DCB4B405/sea-stars-starfish-Caribbean-sea.jpg" width="160" height="120" align="left" /> 
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/SARS-CoV-2_without_background.png/220px-SARS-CoV-2_without_background.png" width="120" height="120" align="left" /> 
 
-Mexico is a country with a lot of species and environments, what is also true for aquatic organisms. Among  these species are the echinoderms, who live in the oceans around the mexican territory.  
-_Echinodermata_ is a _phylum_ conformed by about 7 000 species, being all of them different and adapted to its own environment. Some of their most important characteristics are pentaradial symmetry, structure of exoskeleton and ambulacral system that enables them to move.  
-All of echinoderms live in the ocean, since they are not capable to survive in fresh water nor out of the water. Even though, they are distributed in many different places. That is why we propose to find out what sets of echinoderms are located in specific environments.   
+SARS-CoV-2 is the virus responsible of coronavirus disease 19 (COVID-19), which became a worlwide pandemic a few years ago. This virus is tought to be spread by droplets produced when a person coughs or sneezes, and also by touching infected surfaces and then touching mouth, eyes or nose. In this context, they were also found elements from this coronavirus in wastewater in many different countries. Concentrations of these elements were measured and registered in open-access databases, with samples from different places and from different dates. 
 
 
+## Problem Statement
 
-## Problem Statement  
+We hypothesized that the concentration of coronavirus elements in wastewaters will increase or decrease through time, responding to the pandemic stage.  
+Our objective is to find a tendency in coronavirus elements concentrations to increase or decrease.
 
-
-We hypothesized that determined species have determined living conditions. 
-By grouping the samples according to the environmental conditions and location, we expect that the individuals of each species are contained in a single group.
-We intend to do the phase of grouping, by a k means algorithm. Once we have this classification, we will identify the samples contained in those groups.  
 
 ## Methods
 
-The data that we used for this project is a national collection of echinoderms around Mexico, and it is available in https://data.amerigeoss.org/dataset/coleccion-nacional-de-equinodermos. The main information that it contains is the taxonomy of each echinoderm and its location.  
-This data is written in a CSV file, and it is composed by the following columns:  
-- decimal_latitude
-- decimal_longitude
-- kingdom
-- phylum
-- class
-- order
-- family
-- genus
-- subgenus
-- specie
-- taxon_scientific_name
-- individual_count
-- country_full
-- state_province
-- water_doby
-- depth  
+The data that we used for this project comes from the Global Water Pathogens Project 2024, and it is available in https://sphere.waterpathogens.org/search. 
+The main information that it contains is a sample ID, a location ID, the date and the concentration.  
+This data is written in many CSV files, which are essentially composed by the following columns:  
+- Sample ID
+- Lab Method ID
+- Site ID
+- Date/Time
+- Sample Collection Type
+- Target
+- Target Type
+- Target Result
+- Target Concentration
+- Target Units
+- Target Detection Limit
+
 
 ### A. Server and Software
 
@@ -56,11 +51,12 @@ This data is written in a CSV file, and it is composed by the following columns:
 
 We filtered the original data file, and only conserved the useful columns for the purpose of this project.     
 
-The filtered data file was processed using Bash and it is available in `data/filtered_echinoderms.tsv`, in this repository.
+
+The filtered data file was processed using Bash and it is available in `data/filtered_virus_wastewater.tsv`, in this repository.
 
 ```
 |-- data
-|   `-- filtered_echinoderms.tsv
+|   `-- filtered_virus_wastewater.tsv
 ```
 
 
@@ -76,6 +72,9 @@ Fecha de descarga: 09/30/2024
 | filtered_echinoderms.tsv  | Filtered database of echinoderms with its taxonomy and distribution | Tab-separated values file |
 | water_distribution.tsv   | Environmental characteristics related to location | Tab-separated values file |
 
+
+
+#### Files format
 
 
 #### Files format
@@ -154,6 +153,6 @@ Format:
 
 
 ## References
-1. _PHYLUM ECHINODERMATA - Acuarium Virtual IFAC - Generalitat Valenciana_. (s. f.). Acuarium Virtual Ifac. https://parquesnaturales.gva.es/es/web/acuarium-virtual-ifac/phylum-echinodermata
 
-2. _Colección Nacional de Equinodermos - AmeriGEOSS Community Platform DataHub. (BETA)_. (s. f.). https://data.amerigeoss.org/dataset/coleccion-nacional-de-equinodermos
+1. _NCI Dictionary of Cancer Terms._ (s. f.). Cancer.gov. https://www.cancer.gov/publications/dictionaries/cancer-terms/def/sars-cov-2
+
