@@ -3,7 +3,9 @@
 Name:  Gabriel Ramirez Vilchis (<gramirez@lcg.unam.mx>)  
 Name:  Santiago Orozco Barrera (<santiago@lcg.unam.mx>)  
   
+
 Date:  Oct/15/2024  
+
   
   
 ## Introduction  
@@ -17,6 +19,7 @@ SARS-CoV-2 is the virus responsible of coronavirus disease 19 (COVID-19), which 
 
 We hypothesized that the concentration of coronavirus elements in wastewaters will increase or decrease through time, responding to the pandemic stage.  
 Our objective is to find a tendency in coronavirus elements concentrations to increase or decrease.
+
 
 ## Methods
 
@@ -35,6 +38,7 @@ This data is written in many CSV files, which are essentially composed by the fo
 - Target Units
 - Target Detection Limit
 
+
 ### A. Server and Software
 
 > Server: chaac.lcg.unam.mx  
@@ -46,6 +50,7 @@ This data is written in many CSV files, which are essentially composed by the fo
 ### B. Input data 
 
 We filtered the original data file, and only conserved the useful columns for the purpose of this project.     
+
 
 The filtered data file was processed using Bash and it is available in `data/filtered_virus_wastewater.tsv`, in this repository.
 
@@ -67,6 +72,9 @@ Fecha de descarga: 09/30/2024
 | filtered_echinoderms.tsv  | Filtered database of echinoderms with its taxonomy and distribution | Tab-separated values file |
 | water_distribution.tsv   | Environmental characteristics related to location | Tab-separated values file |
 
+
+
+#### Files format
 
 
 #### Files format
@@ -145,4 +153,6 @@ Format:
 
 
 ## References
+
 1. _NCI Dictionary of Cancer Terms._ (s. f.). Cancer.gov. https://www.cancer.gov/publications/dictionaries/cancer-terms/def/sars-cov-2
+
