@@ -1,0 +1,23 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: Equinoderms in Mexico
+message: Repository for de Equinoderms in Mexico project
+type: software
+authors:
+  - given-names: Gabriel
+    family-names: Ramirez
+    email: gramirez@lcg.unam.mx
+    affiliation: LCG UNAM
+  - given-names: Santiago
+    family-names: Orozco
+    email: santiago@lcg.unam.mx
+    affiliation: LCG UNAM
+repository-code: 'https://github.com/gabrielramirezv/echinoderms_in_Mexico/'
+keywords:
+  - Echinoderms
+  - Equinoderms in Mexico
+license: MIT
+version: v1.0.0
+date-released: '2024-09-30'
