@@ -45,7 +45,7 @@ El código fuente está disponible en este repositorio. Se acoge con satisfacci�
 
 ## Terms of use
 
-Este script está disponible bajo la licencia [nombre de la licencia]. Consulte el archivo LICENSE para obtener más detalles.
+This script is available under the MIT license. See the LICENSE file for more details.
 
 ## Citation
 
