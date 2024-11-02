@@ -1,7 +1,7 @@
 # SARS-CoV-2 in wastewater
 
-This is the repository for the SARS-CoV-2 in wastewater project. Derived form the world wide recente epidemic of SARS-CoV-2, there has been initiatives all around the globe to measure the presence of the virus in the population. One way to do this is by measure specify markers of the virus in the wastewater of different localities. One of the service has been done by the Scottish Environmental Protection Agency (SEPA) in the territory of Scotland in the UK.
-Here we intended to visualize, for further undertanding, the prevalecense of the desease in diferent kinds of populations and across time.  
+This is the repository for the SARS-CoV-2 in wastewater project. Derived from the worldwide recent epidemic of SARS-CoV-2, there have been initiatives all around the globe to measure the presence of the virus in the population. One way to do this is by measuring specific markers of the virus in the wastewater of different localities. One such service has been provided by the Scottish Environmental Protection Agency (SEPA) in the territory of Scotland in the UK. 
+Here we aim to visualize, for further understanding, the prevalence of the disease in different types of populations and across time.
 
 ## Authors:
 
