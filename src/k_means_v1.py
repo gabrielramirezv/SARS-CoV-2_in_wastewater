@@ -37,13 +37,15 @@ colu = uk_data.columns.str.replace(" ","_")
 uk_data.columns=colu
 # 3. Convert the date into integer value
 fechas = pd.to_datetime(uk_data.loc[:,"Date/Time"])
-time = fechas.astype('int64') // 1e9 # En segundos
+time = fechas.astype('int64') // 1e9 # En segundos 
 # 4. Add a new column to the dataframe
 uk_data["Date_epoch"] = time
 
 # 5. Reshape the dataframe in a k-means suitable format
 uk_pivot = uk_data.pivot(index='Site_ID', columns='Date_epoch', values='Target_1_Concentration')
 uk_pivot_NaN = uk_pivot
+
+# =================================================================================================
 
 # 6. Interpolar
 uk_pivot.interpolate(method='linear', axis=1, inplace=True)
@@ -73,7 +75,8 @@ kmeans.fit(data_scaled)
 uk_pivot_hifi['Cluster'] = kmeans.labels_
 
 # Imprimir los resultados
-print("Clusters asignados a cada Site_ID:")
-print(uk_pivot_hifi[['Cluster']])
+#print("Clusters asignados a cada Site_ID:")
+#print(uk_pivot_hifi[['Cluster']])
 
 uk_cluter = uk_pivot_hifi
+

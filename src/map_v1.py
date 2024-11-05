@@ -3,8 +3,10 @@ import pandas as pd
 import seaborn as sns
 from mpl_toolkits.basemap import Basemap
 
-
 from k_means_v1 import uk_cluter
+
+# =================================================================================================
+
 
 # Lista de coordenadas (latitud, longitud)
 co = pd.read_csv("../data/monitoring-sites.csv")
