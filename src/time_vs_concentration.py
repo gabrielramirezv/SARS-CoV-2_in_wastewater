@@ -11,11 +11,10 @@ uk_data = pd.read_csv("../data/uk_sepa_samples_202312.csv")
 uk_data = uk_data.dropna()
 
 # 2. Rename the columns
-colu = uk_data.columns.str.replace(" ","_") 
-uk_data.columns=colu
+uk_data.columns = uk_data.columns.str.replace(" ","_") 
+uk_data.columns = uk_data.columns.str.replace("/","_") 
 # 3. Convert the date into integer value
-fechas = pd.to_datetime(uk_data.loc[:,"Date/Time"])
-time = fechas.astype('int64') // 1e9 # En segundos 
+time = pd.to_datetime(uk_data.loc[:,"Date_Time"])
 # 4. Add a new column to the dataframe
 uk_data["Date_epoch"] = time
 
@@ -24,13 +23,9 @@ uk_pivot = uk_data.pivot(index='Site_ID', columns='Date_epoch', values='Target_1
 
 # =================================================================================================
 
-Mean = uk_pivot.mean()
-Median = uk_pivot.median()
-
-
 estadisticas = pd.DataFrame({
-    'Mean': Mean,
-    'Median': Median
+    'Mean': uk_pivot.mean(),
+    'Median': uk_pivot.median()
 })
 estadisticas = estadisticas.reset_index()
 
