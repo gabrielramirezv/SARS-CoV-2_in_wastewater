@@ -1,8 +1,7 @@
-# Echinoderms in Mexico
+# SARS-CoV-2 in wastewater
 
-This is the repository for the Echinoderms in Mexico project. We hypothesize that habitat conditions (focusing on temperature, pH, and salinity) should be related to the diversity of echinoderm species that inhabit them. We expect to find that a species will be present in habitats with similar conditions even if they are not geographically close. Therefore, the distribution of Echinoderm species in Mexico should be governed by the temperature, pH, and salinity of the water.
-
-We propose to associate the samples with the water conditions in which they were found, hoping that there will be a correlation with the species of the organism.
+This is the repository for the SARS-CoV-2 in wastewater project. Derived from the worldwide recent epidemic of SARS-CoV-2, there have been initiatives all around the globe to measure the presence of the virus in the population. One way to do this is by measuring specific markers of the virus in the wastewater of different localities. One such service has been provided by the Scottish Environmental Protection Agency (SEPA) in the territory of Scotland in the UK. 
+Here we aim to visualize, for further understanding, the prevalence of the disease in different types of populations and across time.
 
 ## Authors:
 
@@ -32,9 +31,8 @@ python -m unittest [Nombre del script].py
 
 ## Data:
 
-The employed dataset, Colección Nacional de Equinodermos, was downloaded from: [https://data.amerigeoss.org/dataset/coleccion-nacional-de-equinodermos]
-Unidad Académica de Ecología y Biodiversidad Acuática, Instituto de Ciencias del Mar y Limnología (ICML), Luidia phragma H. L. Clark, 1910, ejemplar de: 
-Colección Nacional de Equinodermos (ICML-UNAM). En Portal de Datos Abiertos UNAM (en línea), México, Universidad Nacional Autónoma de México.
+The employed data and asociated data of the UK-Scotland-SEPA in the Wast Water page. It involves 3 files, of which we only used 2: monitoring-sites.csv and sepa_samples_202312.csv
+UK - Scotland - SEPA: Wastewater SPHERE (15/10/2024). https://sphere.waterpathogens.org/dataset/634a33cd-9444-4f4a-8234-b7886e45d020.
 
 ## Metadata and documentation
 
@@ -52,7 +50,7 @@ This script is available under the MIT license. See the LICENSE file for more de
 ## Citation
 
 If you use this script in your work, please cite it as:
-Ramirez, G. and Orozco, S. (2024). Echinoderms in Mexico (v1.0.0) [GitHub Repository]. GitHub. https://github.com/gabrielramirezv/echinoderms_in_Mexico/ 
+Ramirez, G. and Orozco, S. (2024). SARS-CoV-2 in wastewater (v1.0.0) [GitHub Repository]. GitHub. https://github.com/gabrielramirezv/SARS-CoV-2_in_wastewater/
 
 ## Contact us
 

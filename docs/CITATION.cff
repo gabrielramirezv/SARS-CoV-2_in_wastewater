@@ -2,8 +2,8 @@
 # Visit https://bit.ly/cffinit to generate yours today!
 
 cff-version: 1.2.0
-title: Equinoderms in Mexico
-message: Repository for de Equinoderms in Mexico project
+title: SARS-CoV-2 in wastewater
+message: Repository for SARS-CoV-2 in wastewater project
 type: software
 authors:
   - given-names: Gabriel
@@ -14,10 +14,12 @@ authors:
     family-names: Orozco
     email: santiago@lcg.unam.mx
     affiliation: LCG UNAM
-repository-code: 'https://github.com/gabrielramirezv/echinoderms_in_Mexico/'
+repository-code: >-
+  https://github.com/gabrielramirezv/SARS-CoV-2_in_wastewater
 keywords:
-  - Echinoderms
-  - Equinoderms in Mexico
+  - SARS-CoV
+  - Scotland
+  - Covid-19
 license: MIT
 version: v1.0.0
-date-released: '2024-09-30'
+date-released: '2025-11-06'
