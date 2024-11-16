@@ -58,21 +58,21 @@ uk_pivot = uk_data.pivot(index='Site_ID',
 # ============================================================================
 
 # Create data frame with statistics
-estadisticas = pd.DataFrame({
+statistics = pd.DataFrame({
     'Mean': uk_pivot.mean(),
     'Median': uk_pivot.median()
 })
-estadisticas = estadisticas.reset_index()
+statistics = statistics.reset_index()
 
 # Plot by mean concentrations
-plt.plot(estadisticas.Date_epoch, estadisticas.Mean)
+plt.plot(statistics.Date_epoch, statistics.Mean)
 plt.title('Time vs Concentration')
 plt.xlabel('Time')
 plt.ylabel('Mean concentration')
 plt.show()
 
 # Plot by median concentrations
-plt.plot(estadisticas.Date_epoch, estadisticas.Median)
+plt.plot(statistics.Date_epoch, statistics.Median)
 plt.title('Time vs Concentration')
 plt.xlabel('Time')
 plt.ylabel('Median concentration')
