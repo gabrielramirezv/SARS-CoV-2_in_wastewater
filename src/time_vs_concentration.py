@@ -24,7 +24,7 @@ ARGUMENTS
     None
 
 SEE ALSO
-    Einfo
+    k_means_v1
 
 '''
 
@@ -32,7 +32,7 @@ SEE ALSO
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# =================================================================================================
+# ============================================================================
 
 # Read dataset
 uk_data = pd.read_csv("data/uk_sepa_samples_202312.csv")
@@ -51,9 +51,11 @@ time = pd.to_datetime(uk_data.loc[:,"Date_Time"])
 uk_data["Date_epoch"] = time
 
 # Reshape the dataframe in a k-means suitable format
-uk_pivot = uk_data.pivot(index='Site_ID', columns='Date_epoch', values='Target_1_Concentration') 
+uk_pivot = uk_data.pivot(index='Site_ID', 
+                         columns='Date_epoch', 
+                         values='Target_1_Concentration') 
 
-# =================================================================================================
+# ============================================================================
 
 # Create data frame with statistics
 estadisticas = pd.DataFrame({
