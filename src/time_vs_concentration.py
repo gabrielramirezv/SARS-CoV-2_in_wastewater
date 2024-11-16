@@ -1,40 +1,75 @@
+'''
+NAME
+    time_vs_concentration
+
+VERSION
+    1.0
+
+AUTHOR
+    Santiago Orozco & Gabriel Ramirez
+
+GITHUB
+    https://github.com/gabrielramirezv/SARS-CoV-2_in_wastewater/blob/main/src/time_vs_concentration.py
+
+DESCRIPTION
+    Plots SARS-CoV-2 elements found in wastewater throughout months
+
+CATEGORY
+    time analysis
+
+USAGE
+    python src/time_vs_concentration.py
+
+ARGUMENTS
+    None
+
+SEE ALSO
+    Einfo
+
+'''
+
+# Import libraries
 import pandas as pd
 import matplotlib.pyplot as plt
 
-from k_means_v1 import uk_cluter
-
 # =================================================================================================
 
-uk_data = pd.read_csv("../data/uk_sepa_samples_202312.csv")
+# Read dataset
+uk_data = pd.read_csv("data/uk_sepa_samples_202312.csv")
 
-# 1. Remove the data with NaN
+# Remove the data with NaN
 uk_data = uk_data.dropna()
 
-# 2. Rename the columns
+# Rename the columns
 uk_data.columns = uk_data.columns.str.replace(" ","_") 
-uk_data.columns = uk_data.columns.str.replace("/","_") 
-# 3. Convert the date into integer value
+uk_data.columns = uk_data.columns.str.replace("/","_")
+
+# Convert the date into integer value
 time = pd.to_datetime(uk_data.loc[:,"Date_Time"])
-# 4. Add a new column to the dataframe
+
+# Add a new column to the dataframe
 uk_data["Date_epoch"] = time
 
-# 5. Reshape the dataframe in a k-means suitable format
+# Reshape the dataframe in a k-means suitable format
 uk_pivot = uk_data.pivot(index='Site_ID', columns='Date_epoch', values='Target_1_Concentration') 
 
 # =================================================================================================
 
+# Create data frame with statistics
 estadisticas = pd.DataFrame({
     'Mean': uk_pivot.mean(),
     'Median': uk_pivot.median()
 })
 estadisticas = estadisticas.reset_index()
 
+# Plot by mean concentrations
 plt.plot(estadisticas.Date_epoch, estadisticas.Mean)
 plt.title('Time vs Concentration')
 plt.xlabel('Time')
 plt.ylabel('Mean concentration')
 plt.show()
 
+# Plot by median concentrations
 plt.plot(estadisticas.Date_epoch, estadisticas.Median)
 plt.title('Time vs Concentration')
 plt.xlabel('Time')
