@@ -138,7 +138,9 @@ Format:
 
 ## Results
  
-##### A. Is there a correlation between the taxonomy of echinoderms and their distribution?  
+##### A. How did concentration of SARS-CoV-2 in wastewater change througout time?  
+By analizing mean concentration, we found  
+<img src="../results/time_vs_concentration.png"/> 
 
 ##### B. What are the locations with the largest ammount of echinoderms?  
 
