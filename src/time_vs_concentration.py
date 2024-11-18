@@ -35,7 +35,7 @@ import matplotlib.pyplot as plt
 # ============================================================================
 
 # Read dataset
-uk_data = pd.read_csv("data/uk_sepa_samples_202312.csv")
+uk_data = pd.read_csv("../data/uk_sepa_samples_202312.csv")
 
 # Remove the data with NaN
 uk_data = uk_data.dropna()
