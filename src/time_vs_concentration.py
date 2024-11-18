@@ -69,11 +69,11 @@ plt.plot(statistics.Date_epoch, statistics.Mean)
 plt.title('Time vs Concentration')
 plt.xlabel('Time')
 plt.ylabel('Mean concentration')
-plt.show()
+plt.savefig("../results/time_vs_concentration_mean.png")
 
 # Plot by median concentrations
 plt.plot(statistics.Date_epoch, statistics.Median)
 plt.title('Time vs Concentration')
 plt.xlabel('Time')
 plt.ylabel('Median concentration')
-plt.show()
+plt.savefig("../results/time_vs_concentration_median.png")
