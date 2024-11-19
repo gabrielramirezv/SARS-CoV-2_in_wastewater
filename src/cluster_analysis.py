@@ -90,7 +90,7 @@ plt.boxplot([cluster_0["Mean"], cluster_1["Mean"], cluster_2["Mean"]],
              labels=['Dataset1', 'Dataset2', 'Dataset3'])
 plt.title("Three Datasets Boxplot")
 plt.ylabel("Values")
-plt.show()
+plt.savefig("../results/cluster_analysis_mean.png")
 
 # ============================================================================
 
@@ -100,4 +100,4 @@ plt.boxplot([cluster_0["Median"], cluster_1["Median"], cluster_2["Median"]],
             labels=['Dataset1', 'Dataset2', 'Dataset3'])
 plt.title("Three Datasets Boxplot")
 plt.ylabel("Values")
-plt.show()
+plt.savefig("../results/cluster_analysis_median.png")
