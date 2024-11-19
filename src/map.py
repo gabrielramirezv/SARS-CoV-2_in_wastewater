@@ -88,4 +88,4 @@ for index, row in cluster_2.iterrows():
 
 # Show plot
 plt.title('Geographic Coordinates Map')
-plt.show()
+plt.savefig("../results/map.png")
