@@ -6,7 +6,7 @@ Name:  Gabriel Ramirez Vilchis (<gramirez@lcg.unam.mx>)
 Name:  Santiago Orozco Barrera (<santiago@lcg.unam.mx>)  
   
 
-Date:  Oct/15/2024  
+Date:  Nov/25/2024  
 
   
   
@@ -19,7 +19,7 @@ SARS-CoV-2 is the virus responsible of coronavirus disease 19 (COVID-19), which 
 
 ## Problem Statement
 
-We hypothesized that the concentration of coronavirus elements in wastewaters will increase or decrease through time, responding to the pandemic stage.  
+We hypothesized that the concentration of coronavirus elements in wastewater will increase or decrease through time, responding to the pandemic stage.  
 Our objective is to find a tendency in coronavirus elements concentrations to increase or decrease.
 
 
@@ -153,11 +153,14 @@ By analizing mean concentration variation throughout time, we found that the hig
 
 
 ## Discussion and Conclusion
-
- <!-- Describir todo lo que descubriste en este análisis -->
+In this analysis, we found that most of the samples in the dataset came from Scottish Borders, Dumfries and Galloway, so the results that we present are representative of those places.  
+When we clustered the samples by location, we observed that the third one got the highest concentrations. Most of the samples in this cluster (red dots in map) are located near the borders with England, so maybe the movement of people from one country to another could be an important factor to make this cluster have a higher concentration of SARS-CoV-2 elements in wastewater.  
+Finally, we saw one of the highest peaks in SARS-CoV-2 elements concentration in wastewater after January 2022, which is a few months after Omicron variant was reported and when many of the restrictions to avoid COVID-19 propagation were relaxed or removed. We also found a peak in mean concentrations around August 2023, but we do not see this in median concentrations, which may indicate that there were just a few samples that presented extremely high concentrartions, which could indicate the places were restrictions were more relaxed or where medical material used to treat COVID-19 was mostly threw to water.    
+In conclusion, COVID-19 pandemic was an historic event that has a remarkable effect in human lifestyle and in our environment, and even a few years after the beggining of this crisis, we are still recovering from it.  
 
 
 ## References
 
 1. _NCI Dictionary of Cancer Terms._ (s. f.). Cancer.gov. https://www.cancer.gov/publications/dictionaries/cancer-terms/def/sars-cov-2
-
+2. The Scottish Government. (2022, January 11). _Coronavirus (COVID-19): state of the epidemic - 7 January 2022._ https://www.gov.scot/publications/coronavirus-covid-19-state-epidemic-07-january-2022/
+3. Arrebola, A. O. Á. G. (2022, January 18). _Escocia termina con las restricciones impuestas por la expansión de ómicron._ ElDiario.es. https://www.eldiario.es/sociedad/ultima-hora-coronavirus-actualidad-politica-18-enero_6_8664322_1083608.html
