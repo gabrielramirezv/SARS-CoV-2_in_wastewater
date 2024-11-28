@@ -9,26 +9,6 @@ This project was made by:
 - Gabriel Ramirez Vilchis [gramirez@lcg.unam.mx]
 - Santiago Orozco Barrera [santiago@lcg.unam.mx]
 
-## Usage:
-
-[Instrucciones de uso]
-
-## Output:
-
-[Acción de salida]
-
-## Exceptions handling:
-
-[Si el archivo proporcionado no existe, el script generará un mensaje de error. Del mismo modo, si el archivo contiene entradas que no son correspondientes, el script generará un error.]
-
-## Tests:
-
-[El script incluye un conjunto de pruebas unitarias. Puede ejecutar estas pruebas con:]
-
-```
-python -m unittest [Nombre del script].py
-```
-
 ## Data:
 
 The employed data and asociated data of the UK-Scotland-SEPA in the Wast Water page. It involves 3 files, of which we only used 2: monitoring-sites.csv and sepa_samples_202312.csv
