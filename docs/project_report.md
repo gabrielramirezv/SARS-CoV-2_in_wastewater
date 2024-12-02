@@ -48,7 +48,7 @@ Both datasets are in CSV format. The data files are available in `data` director
 2. Generate a map of the samples, to see where the most of them were located.  
   
 ##### B. By clustering the samples by location, which cluster contains the highest concentrations? 
-1. With the clusters created for the previous question, create a bocxplot to show which of the clusters has the highest concentration values.  
+1. With the clusters created for the previous question, create a boxplot to show which of the clusters has the highest concentration values.  
   
 ##### C. How did concentration of SARS-CoV-2 in wastewater change througout time?  
 1. Generate a plot of the concentration variation throught diferrent months, in order to find out which months reported the highest concentrations of SARS-CoV-2 residues in wastewater.  
