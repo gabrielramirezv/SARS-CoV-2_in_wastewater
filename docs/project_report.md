@@ -58,7 +58,7 @@ Both datasets are in CSV format. The data files are available in `data` director
 ## Results
 
 ##### A. How are the samples distributed?  
-We generated the following map creating clusters acording with the locations IDs of each sample. In doing so, we realized that most of SARS-CoV-2 samples in wastewater were located in Dumfries and Galloway, and also in Scottish Borders.  
+We generated the following map creating clusters acording with the locations IDs of each sample. In doing so, we realized that most of SARS-CoV-2 samples in wastewater were located in Dumfries and Galloway, and also in Scottish Borders.  '../src'
 <img src="../results/map.png"/>  
 
 ##### B. By clustering the samples by location, which cluster contains the highest concentrations?  
